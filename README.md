@@ -1,4 +1,5 @@
-# fpga_ArtificialVision / Real-time object recognition using a FPGA board
+# fpga_ArtificialVision 
+# Real-time object recognition using a FPGA board
 ACTIVE (from june 2024 until june 2025)
 
 ## Abstract
