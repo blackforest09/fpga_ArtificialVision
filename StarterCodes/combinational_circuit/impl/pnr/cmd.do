@@ -1,0 +1,13 @@
+-d C:\Users\vegad\Desktop\tang\combinational_circuit\impl\gwsynthesis\combinational_circuit.vg
+-p GW2AR-18C-QFN88-8
+-pn GW2AR-LV18QN88C8/I7
+-cst C:\Users\vegad\Desktop\tang\combinational_circuit\src\combinational_circuit.cst
+-cfg C:\Users\vegad\Desktop\tang\combinational_circuit\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
