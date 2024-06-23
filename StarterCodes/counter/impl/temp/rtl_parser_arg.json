@@ -1,0 +1,17 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/vegad/Desktop/tang/counter/src/type1.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+  "C:/Users/vegad/Desktop/tang/counter/src/counter.v"
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/vegad/Desktop/tang/counter/impl/temp/rtl_parser.result",
+ "Top" : "counter",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
