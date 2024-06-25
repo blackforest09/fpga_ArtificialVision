@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="counter" Register="6" Lut="23" T_Register="313(6)" T_Alu="13(0)" T_Lut="445(23)" T_Bsram="2(0)">
-    <SubModule name="gw_gao_inst_0" Register="307" Alu="13" Lut="422" Bsram="2" T_Register="307(307)" T_Alu="13(13)" T_Lut="422(422)" T_Bsram="2(2)"/>
-</Module>
