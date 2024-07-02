@@ -18,19 +18,10 @@ module dual7seg(
     );
 
     reg [20:0] chrono = 0; //chronometer for toggle the digits 
-    reg [7:0] counter = 0; //8 bits counter
-    reg [9:0] bcd; //bcd, for tens and ones, also hundreds but not used
+    reg [6:0] counter = 0; //8 bits counter
+    wire [11:0] bcd; //bcd, for tens and ones, also hundreds but not used
 
-//binary to bcd converter
-    integer i,j;
-    always @(counter) begin
-        for(i = 0; i <= 8+(4)/3; i = i+1) bcd[i] = 0;       // initialize with zeros
-        bcd[7:0] = counter;                                 // initialize with input vector
-        for(i = 0; i <= 4; i = i+1)                         // iterate on structure depth
-          for(j = 0; j <= i/3; j = j+1)                     // iterate on structure width
-            if (bcd[8-i+4*j -: 4] > 4)                      // if > 4
-              bcd[8-i+4*j -: 4] = bcd[8-i+4*j -: 4] + 4'd3; // add 3
-    end
+    bin2bcd converter (.bin(counter), .bcd(bcd));
 
     reg [3:0] digit; //is stored the right bcd value (tens or units)
     wire [6:0] display; //instance a wire of 7 bits, for the 7 segments
