@@ -4,16 +4,6 @@
     <Mode>Standard</Mode>
     <AoCore index="0" sample_clock="i_clk" trig_type="0" storage_depth="4" window_num="1" capture_amount="4" implementation="0" trigger_pos="0" module_name="timer" force_trigger_by_falling_edge="false" capture_init_data_enabled="false">
         <SignalList>
-            <Bus capture_enable="true" name="counter[7:0]">
-                <Signal>counter[7]</Signal>
-                <Signal>counter[6]</Signal>
-                <Signal>counter[5]</Signal>
-                <Signal>counter[4]</Signal>
-                <Signal>counter[3]</Signal>
-                <Signal>counter[2]</Signal>
-                <Signal>counter[1]</Signal>
-                <Signal>counter[0]</Signal>
-            </Bus>
             <Bus capture_enable="true" name="digit[3:0]">
                 <Signal>digit[3]</Signal>
                 <Signal>digit[2]</Signal>
@@ -28,6 +18,20 @@
             <Signal capture_enable="true">e</Signal>
             <Signal capture_enable="true">f</Signal>
             <Signal capture_enable="true">g</Signal>
+            <Bus capture_enable="true" name="bcd[11:0]">
+                <Signal>bcd[11]</Signal>
+                <Signal>bcd[10]</Signal>
+                <Signal>bcd[9]</Signal>
+                <Signal>bcd[8]</Signal>
+                <Signal>bcd[7]</Signal>
+                <Signal>bcd[6]</Signal>
+                <Signal>bcd[5]</Signal>
+                <Signal>bcd[4]</Signal>
+                <Signal>bcd[3]</Signal>
+                <Signal>bcd[2]</Signal>
+                <Signal>bcd[1]</Signal>
+                <Signal>bcd[0]</Signal>
+            </Bus>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -73,5 +77,5 @@
             <Expression>M0</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>0110011101010100</GAO_ID>
+    <GAO_ID>0010100010101100</GAO_ID>
 </GAO_CONFIG>

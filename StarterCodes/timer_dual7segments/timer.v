@@ -6,7 +6,6 @@ First, the inicialization of the counter is 59
 Add a new register enable for activate the downcounting or pause it. 
 Add a new reg zero that says the counting has end, and lights the leds.
 Add a new reg temp to count 1 second
-
 */
 
 module timer(
@@ -16,24 +15,16 @@ module timer(
 
     reg [20:0] chrono = 0; //chronometer for toggle the digits, 90Hz
     reg [24:0] temp = 0;  //for count 1 second
-    reg [7:0] counter = 59; //8 bits counter, init at 59
-    reg [9:0] bcd; //bcd, for tens and ones, also hundreds but not used
+    reg [6:0] counter = 59; //8 bits counter, init at 59
+    wire [11:0] bcd; //bcd, for tens and ones, also hundreds but not used
     reg enable = 0; //1, temp is running. Also it lights a led. 
     reg zero = 0; //indicates the finish of the timer
 
 //binary to bcd converter
-    integer i,j;
-    always @(counter) begin
-        for(i = 0; i <= 8+(4)/3; i = i+1) bcd[i] = 0;       // initialize with zeros
-        bcd[7:0] = counter;                                 // initialize with input vector
-        for(i = 0; i <= 4; i = i+1)                         // iterate on structure depth
-          for(j = 0; j <= i/3; j = j+1)                     // iterate on structure width
-            if (bcd[8-i+4*j -: 4] > 4)                      // if > 4
-              bcd[8-i+4*j -: 4] = bcd[8-i+4*j -: 4] + 4'd3; // add 3
-    end
+    bin2bcd converter (.bin(counter), .bcd(bcd));
 
-    reg [3:0] digit; //is stored the right bcd value (tens or units)
     wire [6:0] display; //instance a wire of 7 bits, for the 7 segments
+    reg [3:0] digit; //is stored the right bcd value (tens or units)
     
 //sets the 7 bit number of the wire depending on the counter
     assign display = (digit==4'd0) ? 7'b0111111 : 
@@ -105,10 +96,10 @@ module timer(
 
     //chronometer for toggle sel pin
         chrono <= chrono + 1'b1;
-        if (chrono == 27000000-1 / 90) begin   
+        if (chrono == 27000000 / 90 - 1) begin   
             sel <= ~sel;
             chrono <= 0;
-            if(sel == 1)
+            if(sel==1)
                 digit <= bcd[7:4];
             else    
                 digit <= bcd[3:0];
