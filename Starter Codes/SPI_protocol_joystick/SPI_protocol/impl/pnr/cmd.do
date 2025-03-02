@@ -1,0 +1,16 @@
+-d C:\Users\vegad\Desktop\SPI_protocol\impl\gwsynthesis\SPI_protocol.vg
+-p GW2AR-18C-QFN88-8
+-pn GW2AR-LV18QN88C8/I7
+-cst C:\Users\vegad\Desktop\SPI_protocol\src\SPI_protocol.cst
+-cfg C:\Users\vegad\Desktop\SPI_protocol\impl\pnr\device.cfg
+-gao_crc 0100010101100001
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000
+-rtl_gao

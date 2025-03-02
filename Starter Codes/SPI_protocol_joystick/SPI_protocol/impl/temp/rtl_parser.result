@@ -1,0 +1,46 @@
+[
+ {
+  "InstFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/main.v",
+  "InstLine" : 1,
+  "InstName" : "main",
+  "ModuleFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/main.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "main",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/main.v",
+    "InstLine" : 11,
+    "InstName" : "joystk",
+    "ModuleFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/joystickController.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "joystick_controller",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/joystickController.v",
+      "InstLine" : 24,
+      "InstName" : "pll_clock",
+      "ModuleFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/gowin_rpll/gowin_rpll.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_rPLL"
+     },
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/joystickController.v",
+      "InstLine" : 36,
+      "InstName" : "mcp",
+      "ModuleFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/mcp300x.v",
+      "ModuleLine" : 11,
+      "ModuleName" : "mcp300x"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/monostable.vhd",
+  "InstLine" : 7,
+  "InstName" : "monostable",
+  "ModuleFile" : "C:/Users/vegad/Desktop/SPI_protocol/src/monostable.vhd",
+  "ModuleLine" : 7,
+  "ModuleName" : "monostable"
+ }
+]

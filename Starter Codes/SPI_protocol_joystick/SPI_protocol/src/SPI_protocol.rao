@@ -1,0 +1,157 @@
+<?xml version="1" encoding="UTF-8"?>
+<GAO_CONFIG>
+    <Version>3.0</Version>
+    <Mode>Standard</Mode>
+    <AoCore index="0" sample_clock="joystk/clk_4MHz" trig_type="0" storage_depth="256" window_num="1" capture_amount="256" implementation="0" trigger_pos="1" module_name="main" force_trigger_by_falling_edge="false" capture_init_data_enabled="true">
+        <SignalList>
+            <Bus capture_enable="true" name="joystk/timer_counter[16:0]">
+                <Signal>joystk/timer_counter[16]</Signal>
+                <Signal>joystk/timer_counter[15]</Signal>
+                <Signal>joystk/timer_counter[14]</Signal>
+                <Signal>joystk/timer_counter[13]</Signal>
+                <Signal>joystk/timer_counter[12]</Signal>
+                <Signal>joystk/timer_counter[11]</Signal>
+                <Signal>joystk/timer_counter[10]</Signal>
+                <Signal>joystk/timer_counter[9]</Signal>
+                <Signal>joystk/timer_counter[8]</Signal>
+                <Signal>joystk/timer_counter[7]</Signal>
+                <Signal>joystk/timer_counter[6]</Signal>
+                <Signal>joystk/timer_counter[5]</Signal>
+                <Signal>joystk/timer_counter[4]</Signal>
+                <Signal>joystk/timer_counter[3]</Signal>
+                <Signal>joystk/timer_counter[2]</Signal>
+                <Signal>joystk/timer_counter[1]</Signal>
+                <Signal>joystk/timer_counter[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">joystk/timer_done</Signal>
+            <Signal capture_enable="true">joystk/r_start_mcp</Signal>
+            <Signal capture_enable="true">joystk/mcp/start_protocol</Signal>
+            <Bus capture_enable="true" name="joystk/r_channel[2:0]">
+                <Signal>joystk/r_channel[2]</Signal>
+                <Signal>joystk/r_channel[1]</Signal>
+                <Signal>joystk/r_channel[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/mcp/channel[2:0]">
+                <Signal>joystk/mcp/channel[2]</Signal>
+                <Signal>joystk/mcp/channel[1]</Signal>
+                <Signal>joystk/mcp/channel[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/mcp/data_to_send[4:0]">
+                <Signal>joystk/mcp/data_to_send[4]</Signal>
+                <Signal>joystk/mcp/data_to_send[3]</Signal>
+                <Signal>joystk/mcp/data_to_send[2]</Signal>
+                <Signal>joystk/mcp/data_to_send[1]</Signal>
+                <Signal>joystk/mcp/data_to_send[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">joystk/data_ready</Signal>
+            <Bus capture_enable="true" name="joystk/analog_value[9:0]">
+                <Signal>joystk/analog_value[9]</Signal>
+                <Signal>joystk/analog_value[8]</Signal>
+                <Signal>joystk/analog_value[7]</Signal>
+                <Signal>joystk/analog_value[6]</Signal>
+                <Signal>joystk/analog_value[5]</Signal>
+                <Signal>joystk/analog_value[4]</Signal>
+                <Signal>joystk/analog_value[3]</Signal>
+                <Signal>joystk/analog_value[2]</Signal>
+                <Signal>joystk/analog_value[1]</Signal>
+                <Signal>joystk/analog_value[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/mcp/analog_value[9:0]">
+                <Signal>joystk/mcp/analog_value[9]</Signal>
+                <Signal>joystk/mcp/analog_value[8]</Signal>
+                <Signal>joystk/mcp/analog_value[7]</Signal>
+                <Signal>joystk/mcp/analog_value[6]</Signal>
+                <Signal>joystk/mcp/analog_value[5]</Signal>
+                <Signal>joystk/mcp/analog_value[4]</Signal>
+                <Signal>joystk/mcp/analog_value[3]</Signal>
+                <Signal>joystk/mcp/analog_value[2]</Signal>
+                <Signal>joystk/mcp/analog_value[1]</Signal>
+                <Signal>joystk/mcp/analog_value[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/analog_x[9:0]">
+                <Signal>joystk/analog_x[9]</Signal>
+                <Signal>joystk/analog_x[8]</Signal>
+                <Signal>joystk/analog_x[7]</Signal>
+                <Signal>joystk/analog_x[6]</Signal>
+                <Signal>joystk/analog_x[5]</Signal>
+                <Signal>joystk/analog_x[4]</Signal>
+                <Signal>joystk/analog_x[3]</Signal>
+                <Signal>joystk/analog_x[2]</Signal>
+                <Signal>joystk/analog_x[1]</Signal>
+                <Signal>joystk/analog_x[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/analog_y[9:0]">
+                <Signal>joystk/analog_y[9]</Signal>
+                <Signal>joystk/analog_y[8]</Signal>
+                <Signal>joystk/analog_y[7]</Signal>
+                <Signal>joystk/analog_y[6]</Signal>
+                <Signal>joystk/analog_y[5]</Signal>
+                <Signal>joystk/analog_y[4]</Signal>
+                <Signal>joystk/analog_y[3]</Signal>
+                <Signal>joystk/analog_y[2]</Signal>
+                <Signal>joystk/analog_y[1]</Signal>
+                <Signal>joystk/analog_y[0]</Signal>
+            </Bus>
+            <Bus capture_enable="true" name="joystk/mcp/shift_register[9:0]">
+                <Signal>joystk/mcp/shift_register[9]</Signal>
+                <Signal>joystk/mcp/shift_register[8]</Signal>
+                <Signal>joystk/mcp/shift_register[7]</Signal>
+                <Signal>joystk/mcp/shift_register[6]</Signal>
+                <Signal>joystk/mcp/shift_register[5]</Signal>
+                <Signal>joystk/mcp/shift_register[4]</Signal>
+                <Signal>joystk/mcp/shift_register[3]</Signal>
+                <Signal>joystk/mcp/shift_register[2]</Signal>
+                <Signal>joystk/mcp/shift_register[1]</Signal>
+                <Signal>joystk/mcp/shift_register[0]</Signal>
+            </Bus>
+            <Signal capture_enable="true">spi_MISO</Signal>
+            <Signal capture_enable="true">spi_CLK</Signal>
+            <Signal capture_enable="true">spi_MOSI</Signal>
+            <Signal capture_enable="true">mcp_CS</Signal>
+        </SignalList>
+        <Triggers>
+            <Trigger index="0">
+                <SignalList>
+                    <Signal>joystk/timer_done</Signal>
+                </SignalList>
+            </Trigger>
+            <Trigger index="1"/>
+            <Trigger index="2"/>
+            <Trigger index="3"/>
+            <Trigger index="4"/>
+            <Trigger index="5"/>
+            <Trigger index="6"/>
+            <Trigger index="7"/>
+            <Trigger index="8"/>
+            <Trigger index="9"/>
+            <Trigger index="10"/>
+            <Trigger index="11"/>
+            <Trigger index="12"/>
+            <Trigger index="13"/>
+            <Trigger index="14"/>
+            <Trigger index="15"/>
+        </Triggers>
+        <MatchUnits>
+            <MatchUnit index="0" enabled="1" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="1" value1="0" trigger="0"/>
+            <MatchUnit index="1" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="2" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="3" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="4" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="5" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="6" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="7" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="8" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="9" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="10" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="11" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="12" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="13" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="14" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+            <MatchUnit index="15" enabled="0" match_type="0" counter_enable="0" counter_width="2" counter="2" countinuous="0" func="0" value0="" value1=""/>
+        </MatchUnits>
+        <Expressions type="Static">
+            <Expression>M0</Expression>
+        </Expressions>
+    </AoCore>
+    <GAO_ID>0100010101100001</GAO_ID>
+</GAO_CONFIG>

@@ -1,0 +1,34 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/vegad/Desktop/SPI_protocol/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/SPI_protocol/src/joystickController.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/SPI_protocol/src/main.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/SPI_protocol/src/mcp300x.v",
+   "Type" : "verilog"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/vegad/Desktop/SPI_protocol/src/monostable.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/vegad/Desktop/SPI_protocol/impl/temp/rtl_parser.result",
+ "Top" : "main",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

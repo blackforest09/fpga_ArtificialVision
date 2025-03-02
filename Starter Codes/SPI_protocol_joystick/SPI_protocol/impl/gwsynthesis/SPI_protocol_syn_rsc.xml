@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="main" T_Register="672(0)" T_Alu="27(0)" T_Lut="618(0)" T_Bsram="3(0)">
+ <SubModule name="gw_gao_inst_0" Register="588" Alu="11" Lut="546" Bsram="3" T_Register="588(588)" T_Alu="11(11)" T_Lut="546(546)" T_Bsram="3(3)"/>
+ <SubModule name="joystk" Register="42" Alu="16" Lut="20" T_Register="84(42)" T_Alu="16(16)" T_Lut="72(20)">
+  <SubModule name="pll_clock"/>
+  <SubModule name="mcp" Register="42" Lut="52" T_Register="42(42)" T_Lut="52(52)"/>
+ </SubModule>
+</Module>
