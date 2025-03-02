@@ -5,7 +5,7 @@ The input clock must be double the serial clock.
 The serial clock must be in function of the supply voltage. 
 Inside the module, generates the serial clock SCLK.
 The MOSI signal is set before the MCP can read for better stability.
-From the start_protocol signal until receive the data_ready with the data_out value, takes 37 cycles. 
+From the start_protocol signal until receive the dataReady with the analogValue, takes 37 cycles. 
 */ 
 
 module mcp300x
@@ -14,9 +14,9 @@ module mcp300x
   input reset,
   input start_protocol,
   input [2:0] channel,
-  input  MISO,
+  input MISO,
 
-  output [9:0] data_out,
+  output [9:0] analog_value,
   output data_ready,
   output SCLK,
   output CS,
@@ -38,13 +38,12 @@ module mcp300x
   reg r_SCLK = 0;  
   reg r_data_ready = 0;
 
-  reg [2:0] readAddress = 0;
-  reg [9:0] currentByteOut = 0;
-  reg [9:0] dataIn = 0;
-  //reg [9:0] dataInBuffer = 0;
+  reg [2:0] read_address = 0;
+  reg [9:0] shift_register  = 0;
+  reg [9:0] r_analog_value = 0;
 
-  reg [4:0] dataToSend = 0;
-  reg [4:0] bitsToSend = 0;
+  reg [4:0] data_to_send = 0;
+  reg [4:0] bits_to_send= 0;
 
   reg [5:0] counter = 0;
   reg [2:0] state = STATE_LOAD_CMD_TO_SEND; //initial
@@ -52,7 +51,7 @@ module mcp300x
   always @(posedge clk_doubleSCLK or posedge reset) begin
     if (reset) begin
       state <= STATE_LOAD_CMD_TO_SEND;
-      currentByteOut <= 0;
+      shift_register  <= 0;
       counter <= 0;
     end else begin
 
@@ -61,11 +60,12 @@ module mcp300x
       case (state)
 
         STATE_LOAD_CMD_TO_SEND: begin
+          r_data_ready <= 0;
+          r_analog_value <= 0;
           if (start_protocol == 1) begin  
             r_CS <= 0;
-            r_data_ready <= 0;
-            dataToSend <= {1'b1, CMD_READ_SINGLE, channel}; //5 bits de datos
-            bitsToSend <= 6; // must be send 5 bits (data) + 1 bit (wait) 
+            data_to_send <= {1'b1, CMD_READ_SINGLE, channel}; //5 bits de datos
+            bits_to_send <= 6; // must be send 5 bits (data) + 1 bit (wait) 
             state <= STATE_SEND;
           end
         end
@@ -75,14 +75,14 @@ module mcp300x
         STATE_SEND: begin
           if (counter == 6'd0) begin
             r_SCLK <= 0;
-            r_MOSI <= dataToSend[4]; // high value position, the 1st digit of 5
-            dataToSend <= {dataToSend[3:0],1'b0}; // move to the left
-            bitsToSend <= bitsToSend - 1; // on the next cycle, i will have sent 1 bit
+            r_MOSI <= data_to_send[4]; // high value position, the 1st digit of 5
+            data_to_send <= {data_to_send[3:0],1'b0}; // move to the left
+            bits_to_send <= bits_to_send - 1; // on the next cycle, i will have sent 1 bit
             counter <= 6'd1;
           end else begin
             counter <= 6'd0;
             r_SCLK <= 1;
-            if (bitsToSend == 0) // when i sent all, end the state
+            if (bits_to_send == 0) // when i sent all, end the state
               state <= STATE_READ_DATA;
             end
           end
@@ -98,7 +98,7 @@ module mcp300x
             end
           end else begin
             r_SCLK <= 1;
-            currentByteOut <= {currentByteOut[8:0], MISO}; //here is added the MISO value to the previous 9 bits
+            shift_register  <= {shift_register [8:0], MISO}; //here is added the MISO value to the previous 9 bits
           end
         end 
 
@@ -107,7 +107,7 @@ module mcp300x
         STATE_DONE: begin
           r_data_ready <= 1;
           r_CS <= 1;
-          dataIn <= currentByteOut;
+          r_analog_value <= shift_register ;
           counter <= 6'd0;
           state <= STATE_LOAD_CMD_TO_SEND;
         end
@@ -120,6 +120,6 @@ module mcp300x
   assign CS =  r_CS;
   assign SCLK = r_SCLK;
   assign data_ready = r_data_ready;
-  assign data_out = dataIn;
+  assign analog_value = r_analog_value;
 
 endmodule
