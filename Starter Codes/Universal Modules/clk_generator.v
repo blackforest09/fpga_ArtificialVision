@@ -22,7 +22,11 @@ module clk_generator #(parameter int INPUT_FREQ, parameter int OUTPUT_FREQ) (
   logic [COUNTER_WIDTH:0] counter = 0;
   initial o_clk = 0;
 
+<<<<<<< HEAD
   always_ff @(posedge i_clk) begin
+=======
+  always @(posedge i_clk) begin
+>>>>>>> origin/main
     if (counter >= MAX_COUNT) begin
       counter <= 1'b0;
       o_clk <= !o_clk;
