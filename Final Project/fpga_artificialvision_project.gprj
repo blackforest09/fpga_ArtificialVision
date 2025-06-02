@@ -1,0 +1,26 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/gowin_rpll/sdram_clk_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/xclk_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd/lcd_h_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd/lcd_pixels.v" type="file.verilog" enable="1"/>
+        <File path="src/lcd/lcd_v_sync.v" type="file.verilog" enable="1"/>
+        <File path="src/main.v" type="file.verilog" enable="1"/>
+        <File path="src/other/clk_generator.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7670/i2c_sccb_protocol.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7670/pixel_capture.v" type="file.verilog" enable="1"/>
+        <File path="src/ov7670/sccb_config.v" type="file.verilog" enable="1"/>
+        <File path="src/prewitt_processing.v" type="file.verilog" enable="1"/>
+        <File path="src/sdram/sdram_pixels.v" type="file.verilog" enable="1"/>
+        <File path="src/sdram/sdram_protocol.v" type="file.verilog" enable="1"/>
+        <File path="src/denoise/denoise.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/monostable/monostable.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/pinout.cst" type="file.cst" enable="1"/>
+        <File path="src/test.rao" type="file.gao" enable="1"/>
+    </FileList>
+</Project>

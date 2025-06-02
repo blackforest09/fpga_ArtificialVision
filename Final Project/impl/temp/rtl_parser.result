@@ -1,0 +1,136 @@
+[
+ {
+  "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/gowin_rpll/xclk_pll.v",
+  "InstLine" : 10,
+  "InstName" : "xclk_pll",
+  "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/gowin_rpll/xclk_pll.v",
+  "ModuleLine" : 10,
+  "ModuleName" : "xclk_pll"
+ },
+ {
+  "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+  "InstLine" : 4,
+  "InstName" : "main",
+  "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+  "ModuleLine" : 4,
+  "ModuleName" : "main",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 44,
+    "InstName" : "dn1",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/denoise/denoise.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "denoise"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 51,
+    "InstName" : "dn2",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/denoise/denoise.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "denoise"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 58,
+    "InstName" : "dn3",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/denoise/denoise.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "denoise"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 81,
+    "InstName" : "sdram_clk_pll_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/gowin_rpll/sdram_clk_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "sdram_clk_pll"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 119,
+    "InstName" : "sccb_config_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/sccb_config.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "sccb_config",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/sccb_config.v",
+      "InstLine" : 143,
+      "InstName" : "i2c_sccb_protocol_instance",
+      "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/i2c_sccb_protocol.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "i2c_sccb_protocol"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 151,
+    "InstName" : "pixel_capture_ov7670_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/pixel_capture.v",
+    "ModuleLine" : 5,
+    "ModuleName" : "pixel_capture_ov7670"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 181,
+    "InstName" : "sdram_pixels_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_pixels.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "sdram_pixels",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_pixels.v",
+      "InstLine" : 47,
+      "InstName" : "sdram_refersh_gen",
+      "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/other/clk_generator.v",
+      "ModuleLine" : 14,
+      "ModuleName" : "clk_generator"
+     },
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_pixels.v",
+      "InstLine" : 67,
+      "InstName" : "sdram_protocol_instance",
+      "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_protocol.v",
+      "ModuleLine" : 28,
+      "ModuleName" : "sdram_protocol"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 231,
+    "InstName" : "lcd_hsync_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_h_sync.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lcd_hsync"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 238,
+    "InstName" : "lcd_vsync_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_v_sync.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lcd_vsync"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 247,
+    "InstName" : "lcd_pixels_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_pixels.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "lcd_pixels"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+    "InstLine" : 285,
+    "InstName" : "mono",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/monostable/monostable.vhd",
+    "ModuleLine" : 7,
+    "ModuleName" : "monostable"
+   }
+  ]
+ }
+]

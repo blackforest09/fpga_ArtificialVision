@@ -1,0 +1,75 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/gowin_rpll/sdram_clk_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/gowin_rpll/xclk_pll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_h_sync.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_pixels.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/lcd/lcd_v_sync.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/main.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/other/clk_generator.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/i2c_sccb_protocol.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/pixel_capture.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/ov7670/sccb_config.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/prewitt_processing.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_pixels.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/sdram/sdram_protocol.v",
+   "Type" : "verilog"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/denoise/denoise.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/src/monostable/monostable.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+  "C:/Users/vegad/Desktop/tang/fpga_artificialvision_project/src/main.v"
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/vegad/Desktop/fpga_artificialvision_tfg/fpga_artificialvision_tfg/impl/temp/rtl_parser.result",
+ "Top" : "main",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}
