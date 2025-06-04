@@ -206,7 +206,6 @@ module sccb_config (
 		end
 
     case(state_q) 
-					////////Begin: Setting register values of the camera via SCCB///////////
 
       idle: begin
         if(delay_finish) begin //idle for 0.6s to start-up the camera

@@ -1,37 +1,24 @@
 `timescale 1ns / 1ps
-
-module i2c_sccb_protocol //works on both i2c and SCCB mode(no pullups resistors needed)
+//works on both i2c and SCCB mode(no pullups resistors needed)
+module i2c_sccb_protocol 
 	#(parameter freq=100_000)
 	(
 	input wire clk, rst_n,
-	input wire start,stop,
+  input wire start,stop,
 	input wire[7:0] wr_data,
-	output reg rd_tick, //ticks when read data from servant is ready,data will be taken from rd_data
-	output reg[1:0] ack, //ack[1] ticks at the ack bit[9th bit],ack[0] asserts when ack bit is ACK,else NACK
+
+  //ticks when read data from servant is ready,data will be taken from rd_data
+	output reg rd_tick,  
+  //ack[1] ticks at the ack bit[9th bit],ack[0] asserts when ack bit is ACK,else NACK
+	output reg[1:0] ack, 
 	output reg[7:0] rd_data, 
 	inout wire scl,sda, 
 	output reg[3:0] state
-    ); 
+); 
 	 
-	 /*
-	 i2c_top #(.freq(100_000)) m0
-	(
-		.clk(clk),
-		.rst_n(rst_n),
-		.start(start),
-		.stop(stop),
-		.wr_data(wr_data),
-		.rd_tick(rd_tick), //ticks when read data from servant is ready,data will be taken from rd_data
-		.ack(ack), //ack[1] ticks at the ack bit[9th bit],ack[0] asserts when ack bit is ACK,else NACK
-		.rd_data(rd_data), 
-		.scl(scl),
-		.sda(sda)
-    ); 
-	 */
-	 
-	 localparam full = (100_000_000)/(2*freq),
-					half= full/2,
-					counter_width=log2(full);
+  localparam  full          = (100_000_000)/(2*freq),
+              half          = full/2,
+              counter_width = log2(full);
 					
 	 function integer log2(input integer n); //automatically determines the width needed by counter
 		integer i;

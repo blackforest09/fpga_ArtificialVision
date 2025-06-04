@@ -11,12 +11,10 @@ module sdram_pixels (
 
   input wire [7:0] write_data,
   input wire write_enable,
-  input wire [9:0] write_row,
-  input wire [9:0] write_col,
 
   input wire read_enable,        // enable signal from lcd_pixels
-  input wire [9:0] read_row,     // pos_y of the lcd
-  input wire [9:0] read_col,     // pos_x of the lcd
+  input wire [20:0] read_address,
+  input wire [20:0] write_address,
 
   output reg read_ready,
   output reg [31:0] read_data,
@@ -34,33 +32,25 @@ module sdram_pixels (
   output reg [3:0] O_sdram_dqm
 );
   
-  reg [20:0] sdram_address;
+  reg [20:0] address;
   reg sdram_read;
   reg sdram_write;
-  reg [31:0] sdram_din;
-  reg [31:0] sdram_dout;
+  reg [31:0] sdram_data_in;
+  reg [31:0] sdram_data_out;
   reg sdram_busy;
   reg sdram_fail;
 
-  // sdram refresh signal
-  wire sdram_refresh;  
-  clk_generator #(.INPUT_FREQ(27000), .OUTPUT_FREQ(67)) sdram_refersh_gen (
-    .i_clk(quartz_clk),
-    .o_clk(sdram_refresh)
-  );
-
-
   always_ff @(posedge sdram_clk) begin
-    sdram_din     <= {16'h0000, 8'h00, 2'b00, write_data};    // 32 bits
-    read_data     <= sdram_dout;
+    sdram_data_in <= write_data;
+    read_data     <= sdram_data_out;
     sdram_read    <= read_enable;
     sdram_write   <= write_enable;        // pixel_valid
-
+    //address       <= address_sdram;
     if (write_enable && !read_enable) begin
-      sdram_address <= {1'b0, write_row,  write_col}; // 21 bits
+      address <= write_address;
     end
     else if (read_enable && !write_enable) begin
-      sdram_address <= {1'b0, read_row, read_col};
+      address <= read_address;
     end
   end
 
@@ -69,15 +59,15 @@ module sdram_pixels (
     .clk        (sdram_clk), 
     .clk_sdram  (sdram_clk_p), 
     .resetn     (reset_n),
-    .addr       (sdram_address), 
+    .addr       (address), 
     .rd         (sdram_read), 
     .wr         (sdram_write),
-    .din        (sdram_din), 
-    .refresh    (0), //sdram_refresh),
+    .din        (sdram_data_in), 
+    .refresh    (0),
 
     //outputs
     .busy       (sdram_busy),
-    .dout32     (sdram_dout), 
+    .dout32     (sdram_data_out), 
     .data_ready (read_ready),
 
     // MAGIC PORTS FOR SDRAM (internal)

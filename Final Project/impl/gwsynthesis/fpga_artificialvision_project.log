@@ -1,234 +1,55 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\gowin_rpll\sdram_clk_pll.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\gowin_rpll\xclk_pll.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_h_sync.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_pixels.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_v_sync.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v'
-Undeclared symbol 'sdram_clk', assumed default net type 'wire'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":46)
-WARN  (EX3638) : 'sdram_clk' is already implicitly declared on line 46("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":79)
-Undeclared symbol 'start_capture', assumed default net type 'wire'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":147)
-Undeclared symbol 'lcd_y', assumed default net type 'wire'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":194)
-Undeclared symbol 'lcd_x', assumed default net type 'wire'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":195)
-WARN  (EX3638) : 'lcd_x' is already implicitly declared on line 195("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":220)
-WARN  (EX3638) : 'lcd_y' is already implicitly declared on line 194("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":221)
-Undeclared symbol 'start_display', assumed default net type 'wire'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":252)
-WARN  (EX3638) : 'start_display' is already implicitly declared on line 252("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":281)
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\other\clk_generator.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\i2c_sccb_protocol.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\pixel_capture.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\sccb_config.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\prewitt_processing.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_pixels.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_protocol.v'
-Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\denoise\denoise.vhd'
-Analyzing entity 'denoise'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\denoise\denoise.vhd":5)
-Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\denoise\denoise.vhd":15)
-Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\monostable\monostable.vhd'
-Analyzing entity 'monostable'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\monostable\monostable.vhd":7)
-Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\monostable\monostable.vhd":18)
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
-Analyzing included file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
-Analyzing included file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_expression.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_init.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
-Analyzing included file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_parameter.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
-Back to file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
-Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\gw_jtag.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
-Compiling module 'main'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":4)
-Switching to VHDL mode to elaborate design unit 'denoise'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":48)
-Processing 'denoise(rtl)'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\denoise\denoise.vhd":5)
-Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":48)
-Switching to VHDL mode to elaborate design unit 'denoise'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":55)
-Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":55)
-Switching to VHDL mode to elaborate design unit 'denoise'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":62)
-Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":62)
-Compiling module 'sdram_clk_pll'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\gowin_rpll\sdram_clk_pll.v":10)
-WARN  (EX3073) : Port 'rd_tick' remains unconnected for this instance("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\sccb_config.v":153)
-Compiling module 'sccb_config'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\sccb_config.v":9)
-Extracting RAM for identifier 'message'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\sccb_config.v":28)
-Compiling module 'i2c_sccb_protocol'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\i2c_sccb_protocol.v":3)
-WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\i2c_sccb_protocol.v":92)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\i2c_sccb_protocol.v":130)
-WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\i2c_sccb_protocol.v":161)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'start_config'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":123)
-Compiling module 'pixel_capture_ov7670'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\pixel_capture.v":5)
-WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\pixel_capture.v":61)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\ov7670\pixel_capture.v":62)
-WARN  (EX3670) : Actual bit length 8 differs from formal bit length 6 for port 'pixel'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":165)
-Compiling module 'sdram_pixels'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_pixels.v":6)
-Compiling module 'clk_generator(INPUT_FREQ=27000,OUTPUT_FREQ=67)'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\other\clk_generator.v":14)
-Compiling module 'sdram_protocol(FREQ=108000000)'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_protocol.v":28)
-WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_protocol.v":245)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'refresh'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_pixels.v":76)
-Compiling module 'lcd_hsync'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_h_sync.v":1)
-Compiling module 'lcd_vsync'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_v_sync.v":1)
-Compiling module 'lcd_pixels'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\lcd\lcd_pixels.v":4)
-Switching to VHDL mode to elaborate design unit 'monostable'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":289)
-Processing 'monostable(rtl)'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\monostable\monostable.vhd":7)
-Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":289)
-Compiling module 'gw_gao'("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
-Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\gw_jtag.v":1)
-Compiling module '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
-Compiling module '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (EX2213) : Found if-condition inside asynchronous set or reset block, synthesis - simulation differences may occur("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-Compiling module '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-WARN  (EX2213) : Found if-condition inside asynchronous set or reset block, synthesis - simulation differences may occur("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-Compiling module '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":74)
-Compiling module '**'("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":374)
-Trying to combine GAO to RTL design
-NOTE  (EX0101) : Current top module is "main"
-[5%] Running netlist conversion ...
-WARN  (CV0016) : Input start_btn is unused("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":8)
-Running device independent optimization ...
-[10%] Optimizing Phase 0 completed
-[15%] Optimizing Phase 1 completed
-[25%] Optimizing Phase 2 completed
-Running inference ...
-[30%] Inferring Phase 0 completed
-[40%] Inferring Phase 1 completed
-[50%] Inferring Phase 2 completed
-[55%] Inferring Phase 3 completed
-Running technical mapping ...
-[60%] Tech-Mapping Phase 0 completed
-[65%] Tech-Mapping Phase 1 completed
-[75%] Tech-Mapping Phase 2 completed
-WARN  (AG0100) : Find logical loop signal : "n1435"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "n170"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "n1435"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "n1437"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "n170"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "n1437"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "mem_addr_inc_en"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-WARN  (AG0100) : Find logical loop signal : "mem_addr_inc_en"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-WARN  (AG0100) : Find logical loop signal : "mem_addr_inc_en"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":1256)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_init"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "internal_reg_start"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_start"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "internal_reg_start"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[3]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[3]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[3]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[2]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[2]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[2]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_max[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[10]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[9]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[8]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[7]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[6]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[5]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[4]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[1]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0100) : Find logical loop signal : "capture_mem_addr_rem[0]"("C:\Gowin\Gowin_V1.9.11.01_Education_x64\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":3042)
-WARN  (AG0101) : The netlist is not one directed acyclic graph
-[80%] Tech-Mapping Phase 3 completed
-[90%] Tech-Mapping Phase 4 completed
-WARN  (NL0002) : The module "denoise" instantiated to "dn3" is swept in optimizing("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":58)
-WARN  (NL0002) : The module "monostable" instantiated to "mono" is swept in optimizing("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\main.v":285)
-WARN  (NL0002) : The module "clk_generator" instantiated to "sdram_refersh_gen" is swept in optimizing("C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\sdram\sdram_pixels.v":50)
-[95%] Generate netlist file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\fpga_artificialvision_project.vg" completed
-[100%] Generate report file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\fpga_artificialvision_project_syn.rpt.html" completed
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\gowin_rpll\sdram_clk_pll.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\gowin_rpll\xclk_pll.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_h_sync.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_pixels.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_v_sync.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\other\clk_generator.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\pixel_capture.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\sccb_config.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v'
+WARN  (EX2830) : Data object 'i' is already declared("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":64)
+Previous declaration of 'i' is from here("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":35)
+WARN  (EX3671) : Second declaration of 'i' is ignored("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":64)
+WARN  (EX3796) : 'i' was previously declared with a range("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":64)
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v'
+Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd'
+Analyzing entity 'denoise'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":5)
+Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":15)
+Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\monostable\monostable.vhd'
+Analyzing entity 'monostable'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\monostable\monostable.vhd":7)
+Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\monostable\monostable.vhd":18)
+Compiling module 'main'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":4)
+Switching to VHDL mode to elaborate design unit 'denoise'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":48)
+Processing 'denoise(rtl)'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":5)
+Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":48)
+Switching to VHDL mode to elaborate design unit 'denoise'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":55)
+Returning to Verilog mode to proceed with elaboration("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":55)
+Compiling module 'sdram_clk_pll'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\gowin_rpll\sdram_clk_pll.v":10)
+WARN  (EX3073) : Port 'rd_tick' remains unconnected for this instance("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\sccb_config.v":153)
+Compiling module 'sccb_config'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\sccb_config.v":9)
+Extracting RAM for identifier 'message'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\sccb_config.v":28)
+Compiling module 'i2c_sccb_protocol'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v":3)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v":79)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v":117)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v":148)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'start_config'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":114)
+Compiling module 'pixel_capture_ov7670'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\pixel_capture.v":10)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 13("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\pixel_capture.v":61)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\pixel_capture.v":62)
+Compiling module 'sdram_pixels'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v":6)
+Compiling module 'sdram_protocol(FREQ=108000000)'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v":28)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v":245)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'refresh'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v":66)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 8 for port 'write_data'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":204)
+Compiling module 'prewitt_processing'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":1)
+ERROR (EX3934) : Loop count limit of 2000 exceeded, condition is never false("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":114)
+Module 'prewitt_processing' remains a black box due to errors in its contents("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":1)
+Compiling module 'lcd_hsync'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_h_sync.v":1)
+Compiling module 'lcd_vsync'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_v_sync.v":1)
+Compiling module 'lcd_pixels'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_pixels.v":4)
 GowinSynthesis finish

@@ -1,9 +1,8 @@
--d C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\fpga_artificialvision_project.vg
+-d C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\gwsynthesis\fpga_artificialvision_project.vg
 -p GW2AR-18C-QFN88-8
 -pn GW2AR-LV18QN88C8/I7
--cst C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\pinout.cst
--cfg C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\device.cfg
--gao_crc 0010001010100000
+-cst C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\pinout.cst
+-cfg C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\device.cfg
 -bit
 -tr
 -ph
@@ -16,4 +15,3 @@
 -correct_hold 1
 -route_maxfan 23
 -global_freq 100.000
--rtl_gao

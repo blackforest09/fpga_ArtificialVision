@@ -1,11 +1,12 @@
-/* David Vega
+/* 
 USES THIS FORMULA FOR GET THE OUTPUT SIGNAL
 CHECK THE REAL OUTPUT FREQ 
 --> freq_output = freq_input / (2 * ticks)
 --> ticks = freq_input / (2 * freq_output)
 
 EXEMPLE OF INSTANCE
-  clk_generator #(.INPUT_FREQ(27000), .OUTPUT_FREQ(200)) clk_200k_i2c (
+  clk_generator 
+    #(.INPUT_FREQ(27000), .OUTPUT_FREQ(200)) clk_200k_i2c (
     .i_clk(clk_27M),
     .o_clk(ov_sclk)
   );

@@ -21,6 +21,6 @@
         <File path="src/denoise/denoise.vhd" type="file.vhdl" enable="1"/>
         <File path="src/monostable/monostable.vhd" type="file.vhdl" enable="1"/>
         <File path="src/pinout.cst" type="file.cst" enable="1"/>
-        <File path="src/test.rao" type="file.gao" enable="1"/>
+        <File path="src/test.rao" type="file.gao" enable="0"/>
     </FileList>
 </Project>

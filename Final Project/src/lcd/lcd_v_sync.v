@@ -2,11 +2,11 @@ module lcd_vsync (
   input  wire lcd_hsync,
   output reg vde,
   output reg [9:0] lcd_y,
-  output wire frame_finish
+  output wire frame_done
 );
 
-  assign frame_finish = frame_finish_q;
-  reg frame_finish_q;
+  assign frame_done = frame_done_q;
+  reg frame_done_q;
 
   localparam vactive      = 480;
   localparam vback_porch  = 20;
@@ -21,11 +21,11 @@ module lcd_vsync (
 
   always @(posedge lcd_hsync) begin
     if (counter == maxcount - 1) begin
-      frame_finish_q <= 1;
-      counter <= 0;
+      frame_done_q  <= 1;
+      counter       <= 0;
     end else begin
-      counter <= counter + 1'b1;
-      frame_finish_q <= 0;
+      counter       <= counter + 1'b1;
+      frame_done_q  <= 0;
     end
     lcd_y <= counter[9:0];
     vde   <= (counter < vactive);

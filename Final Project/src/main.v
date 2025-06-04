@@ -1,4 +1,4 @@
-//`default_nettype none // need to explicity declare the variable type
+`default_nettype none // need to explicity declare the variable type
 `timescale 1ns / 1ps
 
 module main (
@@ -40,25 +40,18 @@ module main (
 
 
 // ----------------------- DENOISE SIGNALS -----------------------
-  wire ov_vsync2;
+  wire ov_vsync_dn;
   denoise dn1 (
     .data_in (ov_vsync),
     .clock(sdram_clk),
-    .data_out (ov_vsync2)
+    .data_out (ov_vsync_dn)
   );
 
-  wire ov_href2;
+  wire ov_href_dn;
   denoise dn2 (
     .data_in (ov_href),
     .clock(sdram_clk),
-    .data_out (ov_href2)
-  );
-
-  wire ov_pclk2;
-  denoise dn3 (
-    .data_in (ov_pclk),
-    .clock(sdram_clk),
-    .data_out (ov_pclk2)
+    .data_out (ov_href_dn)
   );
 // ****************************************************************
 
@@ -96,8 +89,6 @@ module main (
   // Assign the lcd_clk 
   wire displaying;
   assign lcd_clk = displaying ? half_quartz_clk : 0;
-
-
 // ****************************************************************
 
 
@@ -139,33 +130,28 @@ module main (
 
 
 // --------------------- OV7670 PIXEL CAPUTRE ---------------------
-  wire [7:0] pixel_ov7670; //gray
-  wire [9:0]  row_counter_ov7670;
-  wire [9:0]  col_counter_ov7670;
-  wire        pixel_valid_ov7670;
-  //assign      start_capture = sccb_done | display_done;
-  assign start_capture = ( state_main == capture ) ? 1 : 0;
+  wire [31:0] write_data_capture; //gray
+  wire [20:0] write_address_capture;
+  wire        write_enable_capture;
   wire capture_done;
 
   // reads the pixels that the camera process
   pixel_capture_ov7670 pixel_capture_ov7670_instance( 
     //inputs
-    .sdram_clk      (sdram_clk),
     .quartz_clk     (quartz_clk),
     .reset_n        (reset_n),
     .ov_data        (ov_data),
-    .ov_vsync       (ov_vsync2),
-    .ov_href        (ov_href2),
+    .ov_vsync       (ov_vsync_dn),
+    .ov_href        (ov_href_dn),
     .ov_pclk        (ov_pclk),
     .start_capture  (start_capture),
     
     //outputs
     .ov_rst         (ov_rst),
     .ov_pwdn        (ov_pwdn),
-    .pixel          (pixel_ov7670),
-    .pixel_valid    (pixel_valid_ov7670),
-    .row_counter    (row_counter_ov7670), 
-    .col_counter    (col_counter_ov7670),
+    .pixel          (write_data_capture),
+    .pixel_valid    (write_enable_capture),
+    .address        (write_address_capture),
     .capture_done   (capture_done)
   );
 // ****************************************************************
@@ -175,28 +161,56 @@ module main (
 
 
 // -------------- SDRAM INSTANCE & PIXEL WRITE/READ ---------------
+  // WRITE VARIABLES UNIFICATION
+  wire write_enable_sdram;
+  assign write_enable_sdram = 
+              (state_main == capture) ? write_enable_capture : 
+              (state_main == prewitt) ? write_enable_prewitt : 0;
+
+  wire [31:0] write_data_sdram;
+  assign write_data_sdram = 
+              (state_main == capture) ? write_data_capture : 
+              (state_main == prewitt) ? write_data_prewitt : 0;
+
+  wire [20:0] write_address_sdram;
+  assign write_address_sdram = 
+              (state_main == capture) ? write_address_capture : 
+              (state_main == prewitt) ? write_address_prewitt : 0;
+
+  // READ VARIABLES UNIFICATION
+  wire [31:0] pixel_sdram;
   wire read_ready;
-  wire read_enable;
-  wire [31:0] pixel_read;
+
+  wire read_enable_sdram;
+  assign read_enable_sdram = 
+              (state_main == prewitt) ? read_enable_prewitt :
+              (state_main == display) ? read_enable_lcd : 
+              read_enable_lcd; // here gives an error
+
+  wire [20:0] read_address_sdram;
+  assign read_address_sdram = 
+              (state_main == display) ? read_address_lcd :
+              (state_main == prewitt) ? read_address_prewitt :
+              read_address_lcd; // also gives an error  
+  // signals from lcd are more sensible to cut them for the main logic
+
   sdram_pixels sdram_pixels_instance (  // module for write and read pixels from sdram
     //inputs
     .quartz_clk     (quartz_clk),
-    .sdram_clk      (sdram_clk),        //same as clk_108M
+    .sdram_clk      (sdram_clk),
     .sdram_clk_p    (sdram_clk_p),
     .reset_n        (reset_n),
 
-    .write_data     (pixel_ov7670),
-    .write_enable   (pixel_valid_ov7670),
-    .write_row      (row_counter_ov7670),
-    .write_col      (col_counter_ov7670),  
+    .write_data     (write_data_sdram),
+    .write_enable   (write_enable_sdram),
+    .write_address  (write_address_sdram),
 
-    .read_enable    (read_enable), 
-    .read_row       (lcd_y),
-    .read_col       (lcd_x),
+    .read_enable    (read_enable_sdram), 
+    .read_address   (read_address_sdram),
 
     //outputs
     .read_ready     (read_ready),
-    .read_data      (pixel_read),
+    .read_data      (pixel_sdram),
 
     // MAGIC PORTS FOR SDRAM (internal)
     .O_sdram_clk    (O_sdram_clk),
@@ -216,6 +230,36 @@ module main (
 
 
 
+// ---------------------- PREWITT PROCESSING ----------------------
+  wire prewitt_done;
+  wire read_enable_prewitt;
+  wire write_enable_prewitt;
+  wire [31:0] write_data_prewitt;
+  wire [20:0] read_address_prewitt;
+  wire [20:0] write_address_prewitt;
+
+  prewitt_processing prewitt_instance(
+    // inputs
+    .quartz_clk     (quartz_clk),
+    .reset_n        (reset_n),
+    .start          (start_prewitt),
+    .read_ready     (read_ready),
+    .pixel_sdram    (pixel_sdram),
+
+    // outputs
+    .read_enable    (read_enable_prewitt),
+    .read_address   (read_address_prewitt),
+    .write_enable   (write_enable_prewitt),
+    .write_pixel    (write_data_prewitt),
+    .write_address  (write_address_prewitt),
+    .prewitt_done   (prewitt_done)
+  );
+// ****************************************************************
+
+
+
+
+
 // -------------------------- LCD Screen --------------------------
   wire [9:0] lcd_x;   // indicate the horizontal position 
   wire [9:0] lcd_y;   // indicate the vertical position
@@ -225,7 +269,7 @@ module main (
   wire vde;
   assign lcd_den = hde & vde; // Enable when the two are enabled
   wire lcd_hsync;
-  wire frame_finish;
+  wire frame_done;
   wire display_done;
 
   lcd_hsync lcd_hsync_instance(
@@ -236,14 +280,14 @@ module main (
   );
 
   lcd_vsync lcd_vsync_instance(
-    .lcd_hsync    (lcd_hsync), // is the generated in the lcd_hsync
-    .vde          (vde),       // vertical signal in active zone
-    .lcd_y        (lcd_y),     // y pixel position (rows)
-    .frame_finish (frame_finish)
+    .lcd_hsync  (lcd_hsync), // is the generated in the lcd_hsync
+    .vde        (vde),       // vertical signal in active zone
+    .lcd_y      (lcd_y),     // y pixel position (rows)
+    .frame_done (frame_done)
   );
 
-
-
+  wire read_enable_lcd;
+  wire [20:0] read_address_lcd;
   lcd_pixels lcd_pixels_instance( // module for send pixels to lcd
     // inputs
     .lcd_clk        (lcd_clk),
@@ -251,13 +295,14 @@ module main (
     .reset_n        (reset_n),
     .start_display  (start_display),
     .read_ready     (read_ready),
-    .pixel_sdram    (pixel_read),
-        //.lcd_x          (lcd_x),
-        //.lcd_y          (lcd_y),
-    .frame_finish   (frame_finish),
+    .pixel_sdram    (pixel_sdram),
+    .lcd_x          (lcd_x),
+    .lcd_y          (lcd_y),
+    .frame_done     (frame_done),
 
     // outputs
-    .read_enable    (read_enable),
+    .read_enable    (read_enable_lcd),
+    .address        (read_address_lcd),
     .red            (lcd_r),
     .green          (lcd_g),
     .blue           (lcd_b),
@@ -271,25 +316,16 @@ module main (
 
 
 // ---------------------- Main state machine ----------------------
-  localparam  init = 0,
-              capture = 1,
-              display = 2;
+  localparam  init        = 0,
+              capture     = 1,
+              display     = 2,
+              prewitt     = 3,
+              wait_button = 4;
 
   reg [2:0] state_main = 0;
-  reg [2:0] next_state;
-  reg start_btn_prev;
+  reg start_capture;
+  reg start_prewitt;
   reg start_display;
-  wire button_pressed;
-
-  wire start_btn2;
-  monostable mono (
-      .pulse_in(start_btn),
-      .clock(quartz_clk),
-      .pulse_out(start_btn2)
-  );
-
-  assign button_pressed = ( start_btn2 == 1 && start_btn_prev == 0 ) ? 1 : 0;
-  reg frame_finish_prev;
 
   always @ (posedge quartz_clk, negedge reset_n) begin
     if (!reset_n) begin
@@ -297,14 +333,13 @@ module main (
       start_display <= 0;
     end
     else begin
-      start_btn_prev <= start_btn2;
-      frame_finish_prev <= frame_finish;
       
       case(state_main) 
         
         init: begin
           start_display <= 0;
           if (sccb_done == 1) begin
+            start_capture <= 1;
             state_main <= capture;
           end
         end
@@ -312,14 +347,29 @@ module main (
         capture: begin
           start_display <= 0;
           if (capture_done == 1) begin
+            start_prewitt <= 1;
+            state_main <= prewitt; 
+          end
+        end
+
+        prewitt: begin
+          start_prewitt <= 0;
+          if (prewitt_done) begin
             start_display <= 1;
-            state_main <= display; 
+            state_main <= display;
           end
         end
 
         display: begin
           start_display <= 0;
           if (display_done) begin
+            state_main <= wait_button;
+          end
+        end
+
+        wait_button: begin
+          if (start_btn) begin
+            start_capture <= 1;
             state_main <= capture;
           end
         end

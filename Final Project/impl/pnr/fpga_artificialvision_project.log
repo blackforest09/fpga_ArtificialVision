@@ -1,13 +1,12 @@
-Reading netlist file: "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\fpga_artificialvision_project.vg"
-Parsing netlist file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\gwsynthesis\fpga_artificialvision_project.vg" completed
+Reading netlist file: "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\gwsynthesis\fpga_artificialvision_project.vg"
+Parsing netlist file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\gwsynthesis\fpga_artificialvision_project.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\src\pinout.cst"
+Reading constraint file: "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\pinout.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'tck_pad_i' was determined to be a clock but was not created.
 WARN  (TA1132) :  'lcd_clk_d' was determined to be a clock but was not created.
 WARN  (TA1132) :  'lcd_hsync_Z' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
@@ -24,10 +23,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\fpga_artificialvision_project.power.html" completed
-Generate file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\fpga_artificialvision_project.pin.html" completed
-Generate file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\fpga_artificialvision_project.rpt.html" completed
-Generate file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\fpga_artificialvision_project.rpt.txt" completed
-Generate file "C:\Users\vegad\Desktop\fpga_artificialvision_tfg\fpga_artificialvision_tfg\impl\pnr\fpga_artificialvision_project.tr.html" completed
-Mon Jun  2 12:17:35 2025
+Generate file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\fpga_artificialvision_project.power.html" completed
+Generate file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\fpga_artificialvision_project.pin.html" completed
+Generate file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\fpga_artificialvision_project.rpt.html" completed
+Generate file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\fpga_artificialvision_project.rpt.txt" completed
+Generate file "C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\pnr\fpga_artificialvision_project.tr.html" completed
+Wed Jun  4 14:04:30 2025
 
