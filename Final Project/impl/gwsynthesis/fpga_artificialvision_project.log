@@ -6,6 +6,7 @@ Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Proje
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_pixels.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\lcd\lcd_v_sync.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main_withoutprewitt.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\other\clk_generator.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\i2c_sccb_protocol.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\ov7670\pixel_capture.v'
@@ -17,7 +18,6 @@ WARN  (EX3671) : Second declaration of 'i' is ignored("C:\Users\vegad\Desktop\fp
 WARN  (EX3796) : 'i' was previously declared with a range("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":64)
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v'
-Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main_withoutprewitt.v'
 Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd'
 Analyzing entity 'denoise'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":5)
 Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":15)
@@ -45,7 +45,7 @@ WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("C:\Users\v
 Compiling module 'sdram_pixels'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v":6)
 Compiling module 'sdram_protocol(FREQ=108000000)'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v":28)
 WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v":245)
-WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'refresh'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v":66)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'refresh'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v":65)
 WARN  (EX3670) : Actual bit length 32 differs from formal bit length 8 for port 'write_data'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main.v":204)
 Compiling module 'prewitt_processing'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":1)
 ERROR (EX3934) : Loop count limit of 2000 exceeded, condition is never false("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":114)

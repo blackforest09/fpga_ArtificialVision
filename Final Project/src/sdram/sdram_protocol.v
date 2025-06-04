@@ -255,6 +255,5 @@ always @(posedge clk) begin
         rst_done <= 1'b0;
         cfg_busy <= 1'b1;
     end
-end
-
+  end
 endmodule

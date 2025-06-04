@@ -44,8 +44,7 @@ module sdram_pixels (
     sdram_data_in <= write_data;
     read_data     <= sdram_data_out;
     sdram_read    <= read_enable;
-    sdram_write   <= write_enable;        // pixel_valid
-    //address       <= address_sdram;
+    sdram_write   <= write_enable;   
     if (write_enable && !read_enable) begin
       address <= write_address;
     end

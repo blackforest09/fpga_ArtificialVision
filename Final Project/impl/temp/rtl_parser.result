@@ -75,7 +75,7 @@
     "SubInsts" : [
      {
       "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/sdram/sdram_pixels.v",
-      "InstLine" : 57,
+      "InstLine" : 56,
       "InstName" : "sdram_protocol_instance",
       "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/sdram/sdram_protocol.v",
       "ModuleLine" : 28,

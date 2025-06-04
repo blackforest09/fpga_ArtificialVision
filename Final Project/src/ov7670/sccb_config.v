@@ -209,7 +209,7 @@ module sccb_config (
 
       idle: begin
         if(delay_finish) begin //idle for 0.6s to start-up the camera
-          if (start_config) begin
+          if (start_config && !config_done_q) begin
             state_d           = start_sccb; 
             start_delay_d     = 0;
           end

@@ -183,7 +183,7 @@ module prewitt_processing(
 
         grad =  (gx < 0 ? -gx : gx) + 
                 (gy < 0 ? -gy : gy);
-      
+
         result_edge = (grad > THRESHOLD) ? 1'b1 : 1'b0;
 
         state_d = rewrite_pixel;
