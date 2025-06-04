@@ -11,6 +11,7 @@
         <File path="src/lcd/lcd_pixels.v" type="file.verilog" enable="1"/>
         <File path="src/lcd/lcd_v_sync.v" type="file.verilog" enable="1"/>
         <File path="src/main.v" type="file.verilog" enable="1"/>
+        <File path="src/main_withoutprewitt.v" type="file.verilog" enable="1"/>
         <File path="src/other/clk_generator.v" type="file.verilog" enable="1"/>
         <File path="src/ov7670/i2c_sccb_protocol.v" type="file.verilog" enable="1"/>
         <File path="src/ov7670/pixel_capture.v" type="file.verilog" enable="1"/>

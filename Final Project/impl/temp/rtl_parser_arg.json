@@ -54,6 +54,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+   "Type" : "verilog"
+  },
+  {
    "Library" : "work",
    "Path" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/denoise/denoise.vhd",
    "Type" : "vhdl"
@@ -65,11 +69,11 @@
   }
  ],
  "IncludePath" : [
-  "C:/Users/vegad/Desktop/tang/fpga_artificialvision_project/src/main.v"
+
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/impl/temp/rtl_parser.result",
- "Top" : "main",
+ "Top" : "main_withoutprewitt",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_93"
 }

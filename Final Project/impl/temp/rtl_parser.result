@@ -8,12 +8,106 @@
   "ModuleName" : "xclk_pll"
  },
  {
-  "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/denoise/denoise.vhd",
-  "InstLine" : 5,
-  "InstName" : "denoise",
-  "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/denoise/denoise.vhd",
-  "ModuleLine" : 5,
-  "ModuleName" : "denoise"
+  "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+  "InstLine" : 4,
+  "InstName" : "main_withoutprewitt",
+  "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+  "ModuleLine" : 4,
+  "ModuleName" : "main_withoutprewitt",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 44,
+    "InstName" : "dn1",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/denoise/denoise.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "denoise"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 51,
+    "InstName" : "dn2",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/denoise/denoise.vhd",
+    "ModuleLine" : 5,
+    "ModuleName" : "denoise"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 74,
+    "InstName" : "sdram_clk_pll_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/gowin_rpll/sdram_clk_pll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "sdram_clk_pll"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 110,
+    "InstName" : "sccb_config_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/ov7670/sccb_config.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "sccb_config",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/ov7670/sccb_config.v",
+      "InstLine" : 143,
+      "InstName" : "i2c_sccb_protocol_instance",
+      "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/ov7670/i2c_sccb_protocol.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "i2c_sccb_protocol"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 139,
+    "InstName" : "pixel_capture_ov7670_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/ov7670/pixel_capture.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "pixel_capture_ov7670"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 197,
+    "InstName" : "sdram_pixels_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/sdram/sdram_pixels.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "sdram_pixels",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/sdram/sdram_pixels.v",
+      "InstLine" : 57,
+      "InstName" : "sdram_protocol_instance",
+      "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/sdram/sdram_protocol.v",
+      "ModuleLine" : 28,
+      "ModuleName" : "sdram_protocol"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 276,
+    "InstName" : "lcd_hsync_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/lcd/lcd_h_sync.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lcd_hsync"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 283,
+    "InstName" : "lcd_vsync_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/lcd/lcd_v_sync.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "lcd_vsync"
+   },
+   {
+    "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/main_withoutprewitt.v",
+    "InstLine" : 292,
+    "InstName" : "lcd_pixels_instance",
+    "ModuleFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/lcd/lcd_pixels.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "lcd_pixels"
+   }
+  ]
  },
  {
   "InstFile" : "C:/Users/vegad/Desktop/fpga_ArtificialVision/Final Project/src/monostable/monostable.vhd",

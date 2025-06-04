@@ -17,13 +17,13 @@
         <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v" type="verilog"/>
         <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v" type="verilog"/>
         <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v" type="verilog"/>
+        <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main_withoutprewitt.v" type="verilog"/>
         <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd" type="vhdl"/>
         <File path="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\monostable\monostable.vhd" type="vhdl"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
         <Option type="global_freq" value="100.000"/>
-        <Option type="include_path" value="C:/Users/vegad/Desktop/tang/fpga_artificialvision_project/src/main.v"/>
         <Option type="looplimit" value="2000"/>
         <Option type="output_file" value="C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\impl\gwsynthesis\fpga_artificialvision_project.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>

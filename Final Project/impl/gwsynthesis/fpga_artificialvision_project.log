@@ -17,6 +17,7 @@ WARN  (EX3671) : Second declaration of 'i' is ignored("C:\Users\vegad\Desktop\fp
 WARN  (EX3796) : 'i' was previously declared with a range("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\prewitt_processing.v":64)
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_pixels.v'
 Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\sdram\sdram_protocol.v'
+Analyzing Verilog file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\main_withoutprewitt.v'
 Analyzing VHDL file 'C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd'
 Analyzing entity 'denoise'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":5)
 Analyzing architecture 'rtl'("C:\Users\vegad\Desktop\fpga_ArtificialVision\Final Project\src\denoise\denoise.vhd":15)
